@@ -27,10 +27,6 @@ text = '''
 '''
 
 def menu_design():
-        global family_owners
-        global family_members
-        global premium
-        global free
         clear()
         print(Fore.CYAN + text)
         #print('------------------------------------------------------------------------------------------------------------------------')

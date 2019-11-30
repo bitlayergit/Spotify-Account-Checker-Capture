@@ -29,14 +29,11 @@ text = '''
 def menu_design():
         clear()
         print(Fore.CYAN + text)
-        #print('------------------------------------------------------------------------------------------------------------------------')
         print(Fore.CYAN +  '                                    Checked:         ' + str(family_owners + family_members + premium + free + invalid) + '/' + str(len(emails)))
         print(Fore.CYAN +  '                                    ' + Fore.GREEN + 'Family Owners:   ' + str(family_owners))
         print(Fore.CYAN + '                                    ' + Fore.YELLOW + 'Family Members:  ' + str(family_members))
         print(Fore.CYAN + '                                    ' + Fore.YELLOW + 'Premium:         ' + str(premium))
         print(Fore.CYAN +    '                                    ' + Fore.RED + 'Free:            ' + str(free))
-        #print(Fore.CYAN + '                                   |Invalid:         ' + str(invalid))
-        #print(Fore.CYAN +'------------------------------------------------------------------------------------------------------------------------')
         time.sleep(3)
         threading.Thread(target=menu_design, args=(),).start()
 
